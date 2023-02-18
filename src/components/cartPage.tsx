@@ -49,6 +49,10 @@ const CartPage: React.FC = () => {
                         <p>
                           <strong>{data.title}</strong>
                         </p>
+                        <p>
+                          Products left{" "}
+                          <strong>{data.max - data.quantity}</strong>
+                        </p>
 
                         <button
                           type="button"
@@ -85,9 +89,10 @@ const CartPage: React.FC = () => {
                               className="form-control"
                               onChange={() => null}
                             />
-                            <label className="form-label" htmlFor="form1">
-                             
-                            </label>
+                            <label
+                              className="form-label"
+                              htmlFor="form1"
+                            ></label>
                           </div>
 
                           <button
